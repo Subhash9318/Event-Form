@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Event Form</title>
+  <link rel="stylesheet" type="text/css" href="event_form.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Create Event</h1>
+    <form id="eventForm" enctype="multipart/form-data">
+      <label for="uid">User ID:</label>
+      <input type="text" id="uid" name="uid" required>
+
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" required>
+
+      <label for="tagline">Tagline:</label>
+      <input type="text" id="tagline" name="tagline" required>
+
+      <label for="schedule">Schedule:</label>
+      <input type="datetime-local" id="schedule" name="schedule" required>
+
+      <label for="description">Description:</label>
+      <textarea id="description" name="description" required></textarea>
+
+      <label for="image">Image:</label>
+      <input type="file" id="image" name="image" accept="image/*" required>
+
+      <label for="moderator">Moderator:</label>
+      <input type="text" id="moderator" name="moderator" required>
+
+      <label for="category">Category:</label>
+      <input type="text" id="category" name="category" required>
+
+      <label for="sub_category">Sub Category:</label>
+      <input type="text" id="sub_category" name="sub_category" required>
+
+      <label for="rigor_rank">Rigor Rank:</label>
+      <input type="number" id="rigor_rank" name="rigor_rank" required>
+
+      <label for="attendees">Attendees:</label>
+      <input type="text" id="attendees" name="attendees" required>
+
+      <button type="submit">Submit</button>
+    </form>
+
+    <div id="eventList"></div>
+
+    <script src="event_form.js"></script>
+  </div>
+</body>
+</html>
